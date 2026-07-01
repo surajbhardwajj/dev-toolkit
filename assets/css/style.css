@@ -1,13 +1,170 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+/* ======================================================
+   RESET
+====================================================== */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
+html {
+    scroll-behavior: smooth;
+}
 
-    font-family:Arial, Helvetica, sans-serif;
-    background:var(--background);
-    color:var(--text);
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-md);
+    color: var(--text-color);
+    background: var(--background-color);
+    line-height: 1.6;
+    min-height: 100vh;
+}
 
+/* ======================================================
+   GLOBAL ELEMENTS
+====================================================== */
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+    border: none;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+    background: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input,
+textarea {
+    background: transparent;
+}
+
+/* ======================================================
+   TYPOGRAPHY
+====================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--heading-color);
+    font-weight: var(--fw-bold);
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: var(--font-3xl);
+}
+
+h2 {
+    font-size: var(--font-2xl);
+}
+
+h3 {
+    font-size: var(--font-xl);
+}
+
+p {
+    color: var(--text-light);
+}
+
+/* ======================================================
+   LAYOUT
+====================================================== */
+
+.container {
+    width: min(100% - 2rem, var(--container-width));
+    margin-inline: auto;
+}
+
+section {
+    padding: var(--space-3xl) 0;
+}
+
+/* ======================================================
+   COMMON BUTTON
+====================================================== */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 12px 24px;
+
+    background: var(--primary-color);
+    color: white;
+
+    border-radius: var(--radius-md);
+
+    transition: var(--transition);
+}
+
+.btn:hover {
+    background: var(--primary-dark);
+}
+
+/* ======================================================
+   COMMON CARD
+====================================================== */
+
+.card {
+    background: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+/* ======================================================
+   PLACEHOLDER SECTIONS
+====================================================== */
+
+header {
+    min-height: 80px;
+}
+
+.hero {
+    min-height: 400px;
+}
+
+.tools {
+    min-height: 600px;
+}
+
+footer {
+    min-height: 120px;
 }
