@@ -294,3 +294,92 @@ footer {
 
   gap: 15px;
 }
+
+/* ======================================================
+   TOOLS SECTION
+====================================================== */
+
+.tools {
+  padding: 80px 0;
+}
+
+.tool-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.tool-header h2 {
+  margin-bottom: 12px;
+}
+
+.tool-header p {
+  max-width: 600px;
+  margin: auto;
+}
+
+/* ======================================================
+   JSON TOOL
+====================================================== */
+
+.json-tool {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  max-width: 900px;
+  margin: auto;
+}
+
+/* ======================================================
+   EDITOR
+====================================================== */
+
+.editor {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.editor label {
+  font-weight: var(--fw-semibold);
+  color: var(--heading-color);
+}
+
+.editor textarea {
+  width: 100%;
+  min-height: 300px;
+
+  padding: 18px;
+
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+
+  background: #1e1e1e;
+  color: #ffffff;
+
+  font-family: Consolas, monospace;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.editor textarea:focus {
+  border-color: var(--primary-color);
+}
+
+/* ======================================================
+   ACTION BUTTONS
+====================================================== */
+
+.actions {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.actions .btn {
+  min-width: 120px;
+}
+
+
+
+
